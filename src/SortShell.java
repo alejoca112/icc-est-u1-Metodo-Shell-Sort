@@ -17,17 +17,16 @@ public class SortShell {
                     while (j >= gap && numeros[j - gap] > temp) {
                         numeros[j] = numeros[j - gap];
                         j -= gap;
+                        comparaciones++;
                     }
                     numeros[j] = temp;
                     if(cambios){
-                        cambios = true;
                         comparaciones++;
                     }
-
                 }
                 
-                System.out.println(" Comparaciones: " + comparaciones);
             }
+            System.out.println(" Comparaciones y cambios: " + comparaciones );
     }
     
 }

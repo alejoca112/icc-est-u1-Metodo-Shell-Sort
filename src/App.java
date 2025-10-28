@@ -4,7 +4,7 @@ public class App {
         SortShell sortShell = new SortShell();
         View view = new View();
 
-
+        System.out.println("Estudiante Geovanny Cabrera");
         System.out.println("Original: ");
         view.printArray(numeros);
         sortShell.sort(numeros);
